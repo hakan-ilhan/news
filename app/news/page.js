@@ -1,20 +1,12 @@
 import { DUMMY_NEWS } from "@/dummy-news";
-import Link from "next/link";
+
+import NewsList from "../components/news-list";
 
 function NewsPage() {
   return (
     <>
       <h1>News Page</h1>
-      <ul className="news-list">
-        {DUMMY_NEWS.map((item, index) => (
-          <li key={index}>
-            <Link href={`news/${item.slug}`}>
-              <img src={`/images/news/${item.image}`} />
-              <span>{item.title}</span>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <NewsList news={DUMMY_NEWS} />
     </>
   );
 }
