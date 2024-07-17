@@ -8,7 +8,10 @@ function MainHeader() {
         <Link href="/">NextNews</Link>
       </div>
       <nav>
-        <NavLink />
+        <ul>
+          <NavLink href="/news">News</NavLink>
+          <NavLink href="/archive">Archive</NavLink>
+        </ul>
       </nav>
     </header>
   );
