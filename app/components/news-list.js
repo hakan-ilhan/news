@@ -6,7 +6,7 @@ function NewsList({ news }) {
     <ul className="news-list">
       {news.map((item, index) => (
         <li key={index}>
-          <Link href={`news/${item.slug}`}>
+          <Link href={`/news/${item.slug}`}>
             <img src={`/images/news/${item.image}`} />
             <span>{item.title}</span>
           </Link>
