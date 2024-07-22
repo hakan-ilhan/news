@@ -1,5 +1,6 @@
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/icon.jpg";
 import Link from "next/link";
+import "../globals.css";
 
 export default function HomePage() {
   return (
